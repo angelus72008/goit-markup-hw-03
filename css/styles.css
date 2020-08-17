@@ -20,6 +20,10 @@ html {
   padding: 0;
 }
 
+.img {
+  display: block;
+}
+
 body {
     font-family: var(--main-font);
     color: var(--text-color);  
@@ -56,11 +60,8 @@ ul {
   display: flex;
 }
 
-.logo {
-  margin-right:71px;
-}
 
-.first-item {
+.logo-item-list {
   font-family: Raleway;
   font-weight: bold;
   font-size: 26px;
@@ -70,7 +71,8 @@ ul {
   text-decoration:none;
 }
 
-.secondary-item {
+.logo-item {
+  margin-right:70px;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.192;
@@ -105,6 +107,10 @@ ul {
   text-decoration:none;
 }
 
+.auth {
+  font-style: normal;
+}
+
 .auth-nav {
 font-weight: 500;
 font-size: 14px;
@@ -114,7 +120,9 @@ color: var(--text-color);
 text-decoration:none;
 margin-right: 40px;
 }
-
+.auth-nav:last-child{
+  margin-right: 0;
+}
 .auth .auth-nav.current {
   color: var(--accent-color);
 }
@@ -128,39 +136,33 @@ color: var(--accent-color);
 
 /* HERO */
 
-.hero-container {
-padding-top: 200px;
-padding-bottom: 280px;
+.hero {
+  text-align: center;
+  padding: 200px 0;
+  background-color: var(--title-text-color);
 }
-
-
 
 .hero-item {
-font-weight: 900;
-font-size: 44px;
-line-height: 1.304;
-text-align: center;
-letter-spacing: 0.06em;
-text-transform: uppercase;
-color: var(--background-color);
-background-color: var(--title-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.39;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--background-color);
+  margin: 0 0 30px 0;
 }
-
-
 
 .button {
 font-weight: bold;
 font-size: 16px;
 line-height: 1.875;
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.06em;
 color: var(--background-color);
 background-color: var(--accent-color);
 border-color: transparent;
+display: inline-block;
 text-decoration:none;
-padding-left: 478px;
+padding: 10px 32px;
 }
 
 /* ПРЕИМУЩЕСТВА */
@@ -170,12 +172,13 @@ padding-left: 478px;
  }
 
  .features-container {
-  margin-left: auto;
-  padding-right: 30px;
-  padding-top: 89px;
-  padding-bottom: 94px;
+  padding-top: 107px;
 }
 
+.features-title-text:not(:last-child) {
+margin-right: 30px;
+}
+ 
 .features-title {
 font-weight: bold;
 font-size: 14px;
@@ -183,6 +186,7 @@ line-height: 1.143;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: var(--title-text-color);
+margin-bottom: 10px;
 }
 
 .features-text {
@@ -200,7 +204,6 @@ color: var(--text-color);
  justify-content: space-between;
 }
 
-
 .section-text {
 font-weight: bold;
 font-size: 36px;
@@ -208,15 +211,21 @@ line-height: 1.167;
 text-align: center;
 letter-spacing: 0.03em;
 color: var(--title-text-color);
-padding-bottom: 50px;
 padding-top: 94px;
+padding-bottom: 50px;
 }
 
 /* НАША КОМАНДА */
 
+.our-team {
+  padding-top: 94px;
+
+}
+
 .team-list {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 94px;
 }
 
 .team-title {
@@ -226,7 +235,6 @@ line-height: 1.167;
 text-align: center;
 letter-spacing: 0.03em;
 color: var(--title-text-color);
-padding-top: 94px;
 padding-bottom: 50px;
 }
 
@@ -246,7 +254,16 @@ line-height: 1.187;
 text-align: center;
 letter-spacing: 0.03em;
 color: var(--text-color);
+padding-top: 10px;
 }
+
+.our-team-text {
+  align-items: center;
+  padding-top: 30px;
+}
+/* ФУТЕР */
+
+
 
 /* ПОРТФОЛИО */
 
