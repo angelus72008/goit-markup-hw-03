@@ -263,7 +263,9 @@ padding-top: 10px;
 }
 /* ФУТЕР */
 
-
+.footer-nav-container {
+margin-left: 0px;
+}
 
 /* ПОРТФОЛИО */
 
@@ -276,17 +278,6 @@ padding-top: 10px;
 
 .filter-list-item {
   margin-left: 8px;
-}
-
-.portfolio-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding-bottom: 30px;
-}
-
-.photo-list {
-  text-decoration:none;
 }
 
 .filter-list {
@@ -305,6 +296,17 @@ color: var(--title-text-color);
 .filter-list:hover,
 .filter-list:focus {
   color: var(--accent-color);
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+
+.photo-list {
+  text-decoration:none;
 }
 
 .photo-list-text {
