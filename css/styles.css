@@ -263,10 +263,29 @@ padding-top: 10px;
 }
 /* ФУТЕР */
 
-.footer-nav-container {
-margin-left: 0px;
+.footer-navigation {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  align-items: baseline;
+  background-color: var(--title-text-color);
 }
 
+.footer-logo-item {
+  margin-right:70px;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+  color: var(--background-color);
+  text-decoration:none;
+}
+
+.auth-address {
+font-weight: normal;
+font-size: 14px;
+line-height: 1.714;
+letter-spacing: 0.03em;
+}
 /* ПОРТФОЛИО */
 
 .filter {
