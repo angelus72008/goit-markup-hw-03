@@ -263,15 +263,18 @@ padding-top: 10px;
 }
 /* ФУТЕР */
 
-.footer-navigation {
-  margin-top: 60px;
-  margin-bottom: 60px;
-  align-items: baseline;
+.footer {
   background-color: var(--title-text-color);
+
+}
+
+.footer-navigation {
+  align-items: baseline;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-logo-item {
-  margin-right:70px;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.192;
