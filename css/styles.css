@@ -167,13 +167,14 @@ padding: 10px 32px;
 
 /* ПРЕИМУЩЕСТВА */
 
+.our-features {
+padding-top: 107px;
+}
+
 .features {
   display: flex;
  }
 
- .features-container {
-  padding-top: 107px;
-}
 
 .features-title-text:not(:last-child) {
 margin-right: 30px;
@@ -199,6 +200,10 @@ color: var(--text-color);
 
 /* ЧЕМ МЫ ЗАНИМАЕМСЯ */
 
+.section {
+padding-top: 94px;
+}
+
 .img-list {
  display: flex;
  justify-content: space-between;
@@ -211,7 +216,6 @@ line-height: 1.167;
 text-align: center;
 letter-spacing: 0.03em;
 color: var(--title-text-color);
-padding-top: 94px;
 padding-bottom: 50px;
 }
 
